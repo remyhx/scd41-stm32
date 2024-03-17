@@ -20,6 +20,13 @@ include_directories(
     )
 ```
 
+Change the I2C handler in the scd41.h file to the one you use
+
+```h
+#define I2C_HANDLER   hi2c1                 // I2C handler, change to the I2C handler
+```
+
+
 ## Program usage
 
 The lib registers the mode of operation (single shot, continuous, low power continuous), feel free to use or not use in your
